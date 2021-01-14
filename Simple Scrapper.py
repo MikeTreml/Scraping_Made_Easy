@@ -12,8 +12,8 @@ soup = BeautifulSoup(page_source.text, 'lxml')
 
 print(soup.prettify())
 
-
-#books = soup.find_all('li', attrs={"class": "bc-list-item productListItem"})
+#find_all is a good way to get multiple items from a page. replace li with any html tag. replace class with any attribute inside the tag
+books = soup.find_all('li', attrs={"class": "bc-list-item productListItem"})
 
 #for book in books:
     #print(book)
